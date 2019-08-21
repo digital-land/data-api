@@ -8,14 +8,14 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/digital-land/data-collector.git"
+    "url": "git+https://github.com/digital-land/data-api.git"
   },
   "author": "",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/digital-land/data-collector/issues"
+    "url": "https://github.com/digital-land/data-api/issues"
   },
-  "homepage": "https://github.com/digital-land/data-collector#readme",
+  "homepage": "https://github.com/digital-land/data-api#readme",
   "dependencies": {
     "aws-sdk": "^2.514.0"
   },

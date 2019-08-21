@@ -1,5 +1,5 @@
 const actions = {
-  formatResponse: function (data) {
+  formatResponse (data) {
     return {
       statusCode: 200,
       body: JSON.stringify(data)
@@ -7,26 +7,18 @@ const actions = {
   }
 }
 
-exports.getLatestResults = async function () {
-  return actions.formatResponse({
-    data: 'You called getLatestResults!'
-  })
-}
+exports.getLatestResults = async () => actions.formatResponse({
+  data: 'You called getLatestResults!'
+})
 
-exports.getDateResults = async function () {
-  return actions.formatResponse({
-    data: 'You called getDateResults!'
-  })
-}
+exports.getDateResults = async () => actions.formatResponse({
+  data: 'You called getDateResults!'
+})
 
-exports.getOrganisationResults = async function () {
-  return actions.formatResponse({
-    data: 'You called getOrganisationResults!'
-  })
-}
+exports.getOrganisationResults = async () => actions.formatResponse({
+  data: 'You called getOrganisationResults!'
+})
 
-exports.getTypeResults = async function () {
-  return actions.formatResponse({
-    data: 'You called getTypeResults!'
-  })
-}
+exports.getTypeResults = async () => actions.formatResponse({
+  data: 'You called getTypeResults!'
+})
