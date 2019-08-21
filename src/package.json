@@ -1,0 +1,30 @@
+{
+  "name": "data-api",
+  "version": "1.0.0",
+  "description": "A prototype for an API to expose the data held by Digital Land via the collector",
+  "main": "index.js",
+  "scripts": {
+    "test": "NODE_ENV=test type=brownfield-sites node ./node_modules/.bin/nyc --reporter=lcov --reporter=html ./node_modules/.bin/mocha --timeout 30s tests"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/digital-land/data-collector.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/digital-land/data-collector/issues"
+  },
+  "homepage": "https://github.com/digital-land/data-collector#readme",
+  "dependencies": {
+    "aws-sdk": "^2.514.0"
+  },
+  "devDependencies": {
+    "aws-sdk-mock": "^4.5.0",
+    "chai": "^4.2.0",
+    "mocha": "^6.2.0",
+    "nock": "^10.0.6",
+    "nyc": "^14.1.1",
+    "timekeeper": "^2.2.0"
+  }
+}
